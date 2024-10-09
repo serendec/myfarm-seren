@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*----------------------
+ * 農園をさがす > エリアから農園を探す
+ ----------------------*/
+ .areamaps section {
+   /* display: flex; */
+ }
+ .areamaps section figure {
+   width: 35%;
+ }
+ .areamaps section figure img {
+   width: 100%;
+ }
+ .areamaps section ul {
+   /* flex: 1;
+   margin-left: 30px; */
+ }
+ .pc .spareamap_btn li {
+   font-size: 100% !important;
+ }
+ .pc .spareamap_btn li a {
+    background: url(../img/btn_maparrow.png) no-repeat 96% center;
+    background-size: 14px 14px;
+    height: 100px;
+ }
+
+ @media screen and (max-width: 640px) {
+   .sp .spareamap_btn li a {
+     height: 65px;
+   }
+ }

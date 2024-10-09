@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/*----------------------
+ * 農園をさがす > 地域から農園をさがす
+ ----------------------*/
+ .myfarmer_area__box {
+   padding: 60px 0;
+   border-bottom: solid 1px #ccc;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-wrap: wrap;
+       -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
+ }
+ .myfarmer_area__box:last-of-type {
+  border: none;
+ }
+ .myfarmer_area__photo {
+   width: 27%;
+ }
+ .myfarmer_area__photo img {
+   width: 100%;
+ }
+ .myfarmer_area__photo .white-btn,
+ .myfarmer_area__photo .green-btn {
+   margin-top: 15px;
+ }
+ .myfarmer_area__photo img {
+   -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+           border-radius: 10px;
+ }
+ .myfarmer_area__description {
+   width: 71%;
+   margin-left: auto;
+ }
+ .myfarmer_area__description .white-btn,
+ .myfarmer_area__description .green-btn {
+   display: none;
+ }
+ .myfarmer_area__description__title {
+   font-size: 120%;
+   padding-bottom: 8px;
+ }
+ .myfarmer_area__description__address,
+ .myfarmer_area__description__access {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: flex;
+   border-bottom: solid 1px #efefef;
+   padding: 10px 8px;
+ }
+ .myfarmer_area__description__address dt,
+ .myfarmer_area__description__access dt {
+   width: 24%;
+   font-weight: bold;
+ }
+ .myfarmer_area__description__list li dt {
+   font-weight: bold;
+ }
+ .myfarmer_area__description__address dd,
+ .myfarmer_area__description__access dd{
+   width: 75%;
+   margin-left: auto;
+ }
+ .myfarmer_area__description__access dd b {
+   font-size: 80%;
+ }
+ .myfarmer_area__description__parking {
+   padding: 0 4px;
+ }
+ .myfarmer_area__description__list {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: flex;
+   border-bottom: solid 1px #efefef;
+   padding: 10px 8px;
+   text-align: center;
+ }
+ .myfarmer_area__description__list li {
+   width: 25%;
+   list-style: none;
+   border-right: solid 1px #eee;
+ }
+ .myfarmer_area__description__list li:last-child {
+   border-right: none;
+ }
+
+  .myfarmer_farmlist__search {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 25px;
+ }
+ .myfarmer_farmlist__search input[type="text"],
+ .myfarmer_farmlist__search input[type="search"] {
+   border: solid 1px #ddd;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   height: 34px;
+   padding: 3px 12px;
+   max-width: 600px;
+   width: 100%;
+   margin: 0 10px 0 0;
+   font-size: 16px;
+ }
+ .myfarmer_farmlist__search input::placeholder {
+   font-size: 14px;
+   opacity: .7;
+ }
+ .myfarmer_farmlist__search input:focus {
+   outline: solid 2px #88af54;
+ }
+ .myfarmer_farmlist__search .search-keyword {
+   font-size: 88%;
+   font-weight: bold;
+   margin-right: 10px;
+   min-width: 110px;
+ }
+ .myfarmer_farmlist__search button {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   outline: none;
+   padding: 0;
+   appearance: none;
+ }
+ .myfarmer_farmlist__search button.search-btn {
+   background: url(/wp-content/themes/myfarmer/common/img/nav/icon-search.svg) no-repeat 88% 50% / 11px 11px,
+   linear-gradient(346deg, #126d38 20%, #88af54 80%);
+   color: #fff;
+   border: solid 2px #88af54;
+   padding: 3px 26px 3px 22px;
+   min-width: 88px;
+   height: 34px;
+   border-radius: 6px;
+   transition: .1s;
+   letter-spacing: .1em;
+   font-size: 88%;
+   line-height: 100%;
+ }
+ .myfarmer_farmlist__search button.search-btn:hover {
+   background: url(/wp-content/themes/myfarmer/common/img/nav/icon-search.svg) no-repeat 88% 50% / 11px 11px,
+     linear-gradient(346deg, #ed6f2e 20%, #edac2e 80%);
+   border: solid 2px #edac2e;
+   transition: .05s;
+ }
+
+ .s-farms-container {
+  margin:20px 0;
+  padding:20px 20px 0;
+  border:1px solid #CCC;
+ }
+
+.perspective {
+   background: #fff9f2;
+   padding: 0;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   z-index: 1001;
+   transform: translateY(98.25%);
+   /* transform: translateY(0%); */
+   width: 100%;
+   max-width: 160px;
+   border: none;
+   border-radius: 0 10px 0 0;
+ }
+ .perspective h2 span {
+   border-bottom: none;
+   position: relative;
+   letter-spacing: .02em;
+   display: block;
+ }
+ .perspective h2 span::after {
+   content: '＋';
+   position: absolute;
+   display: block;
+   right: 12px;
+   top: 0;
+ }
+ .perspective.open h2 span::after {
+   content: '閉じる ー';
+ }
+ .perspective.open {
+   max-width: 870px;
+   transform: translateY(0%);
+   transition: transform ease .35s;
+ }
+ .perspective h2 {
+   text-align: left;
+   font-size: 88%;
+   line-height: 180%;
+   font-weight: bold;
+   padding: 8px 0 12px 15px;
+   margin: 0 0 10px 0;
+   color: #fff;
+   background: linear-gradient(180deg, #edac2e 0.1%, #ed6f2e 99.9%);
+   text-shadow: 1px 1px 6px #ed6f2e;
+   cursor: pointer;
+   border-top: 3px #ed7c45 solid;
+   border-right: 3px #ed7c45 solid;
+   border-radius: 0 10px 0 0;
+ }
+ .perspective h2:hover {
+   color: #fff;
+   background: linear-gradient(0deg, #ed6f2e 0.1%, #ed6f2e 99.9%);
+   text-shadow: 1px 1px 6px #ed6f2e;
+ }
+ .perspective dl {
+   border-bottom: 2px #f7c7ae dashed;
+   width: 100%;
+   padding: 0 10px 10px;
+   margin-bottom: 10px;
+ }
+ .perspective dl dt {
+   padding: 0;
+   vertical-align: top;
+   width: 120px;
+ }
+ .perspective dl dt span {
+   background: #ed7c45;
+   color: #fff;
+   display: block;
+   border-radius: 5px;
+   text-align: center;
+   font-size: 80%;
+   line-height: 150%;
+   font-weight: bold;
+   padding: 5px;
+ }
+ .perspective dl dd {
+   vertical-align: middle;
+   font-size: 79%;
+   line-height: 150%;
+   padding-bottom: 0;
+ }
+
+ @media screen and (max-width: 640px) {
+   .myfarmer_area__box {
+     padding: 0 0 50px 0;
+     margin-bottom: 20px;
+     border-bottom: solid 1px #ccc;
+     display: block;
+   }
+   .myfarmer_area__photo {
+     width: 100%;
+   }
+   .myfarmer_area__photo img {
+     width: 100%;
+   }
+   .myfarmer_area__description {
+     width: 100%;
+     font-size: 90%;
+   }
+   .myfarmer_area__description .white-btn,
+   .myfarmer_area__description .green-btn {
+     display: block;
+     margin-top: 20px;
+   }
+   .myfarmer_area__photo .white-btn,
+   .myfarmer_area__photo .green-btn {
+     display: none;
+   }
+
+   .myfarmer_farmlist__search .search-keyword {
+     font-size: 70%;
+     font-weight: bold;
+     margin-right: 8px;
+     min-width: 88px;
+   }
+
+   .perspective {
+     transform: translateY(95%);
+   }
+   .perspective dl dt span {
+     padding: 2px;
+   }
+ }

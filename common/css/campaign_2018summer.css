@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------------------------------
+	2か月間無料キャンペーンcss
+ ------------------------------------------------------------------------------------- */
+
+/* PC用css */
+
+@media screen and (min-width: 641px) {
+.summer_main_tit {
+	text-align:center;
+	width:100%;
+	background: url(../img/campaign_2018summer/bg_main_tit.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:30px;
+}
+
+.campaign_2018summer h2 {
+	margin-bottom:20px;
+	text-align:center;
+}
+
+.campaign_2018summer .recommended {
+	text-align:center;
+}
+
+.campaign_2018summer .yellow_area {
+	background:#FCF870;
+	padding:40px 0;
+}
+
+.campaign_2018summer .yellow_area_in {
+	max-width: 1120px;
+    width: 100%;
+    margin: 0 auto 0px;
+}
+
+.campaign_2018summer .white_area {
+	max-width: 1120px;
+    width: 100%;
+	padding:40px 0;
+    margin: 0 auto 0px;
+}
+
+.campaign_2018summer .yellow_area b {
+	color:#377BEB;
+	text-decoration: underline;
+}
+
+.campaign_2018summer .yellow_area .kikan {
+	border:1px solid #323333;
+	font-weight:bold;
+	padding:8px;
+	margin: 8px 0;
+}
+
+.campaign_2018summer .yellow_area .caution {
+	font-size:90%;
+}
+
+
+.campaign_2018summer .nouenmoji {
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.campaign_2018summer .nouenmoji b {
+	color:#F7822B;
+	font-size:120%;
+}
+
+.campaign_2018summer .areamoji {
+	background:#FCF870;
+	font-size:110%;
+	text-align:center;
+	padding:10px 0;
+	margin:10px 0;
+}
+
+.campaign_2018summer .nouen ul {
+	margin-bottom:20px;
+}
+
+.campaign_2018summer .nouen ul:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+	margin: 0px !important;
+}
+
+.campaign_2018summer ul li {
+	list-style-type:none;
+}
+
+.campaign_2018summer .nouen ul li {
+	float: left;
+    width: 49.5%;
+}
+
+.campaign_2018summer .nouen li img {
+	width:100%;
+}
+
+.campaign_2018summer .nouen li.line {
+	border-right:1px solid #B3B3B3;
+	padding-right:1%;
+	margin-right:1%;
+}
+
+.campaign_2018summer .nouen li p b {
+	text-decoration: underline;
+    font-size: 120%;
+    padding-left: 30px;
+    background: url(../img/campaign_2018summer/icon_link.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.campaign_2018summer .nouen li p span {
+	color:#ffffff;
+	background:#FCA927;
+	padding:3px 6px;
+	margin:0 6px 6px 0;
+     border-radius:6px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    -ms-border-radius:6px;
+    display: inline-block;
+}
+
+.campaign_2018summer .nouen .point {
+	margin:6px 0;
+}
+
+.campaign_2018summer .step li:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+	margin: 0px !important;
+}
+
+.campaign_2018summer .step {
+	margin-bottom:40px;
+}
+
+.campaign_2018summer .step li {
+	margin:6px 0;
+}
+
+.campaign_2018summer .step li.line {
+	border-bottom:1px dashed #1EB7DD;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+
+.campaign_2018summer .step li img {
+	float:left;
+	margin-right:8px;
+}
+
+.campaign_2018summer .step li p {
+	float:left;
+	margin-top: 36px;
+}
+}
+
+
+/* スマホ用css */
+@media screen and (max-width: 640px) {
+.campaign_2018summer h2 {
+	margin-bottom:20px;
+}
+
+.campaign_2018summer h2 img {
+	width:100%;
+}
+
+.campaign_2018summer .recommended img {
+	width:100%;
+}
+
+.campaign_2018summer .yellow_area {
+	background:#FCF870;
+	padding:20px;
+}
+
+.campaign_2018summer .white_area {
+	padding:20px;
+}
+
+.campaign_2018summer .yellow_area b {
+	color:#377BEB;
+	text-decoration: underline;
+}
+
+.campaign_2018summer .yellow_area .kikan {
+	border:1px solid #323333;
+	font-weight:bold;
+	padding:8px;
+	margin: 8px 0;
+}
+
+.campaign_2018summer .yellow_area .kikan span {
+	display:block;
+}
+
+.campaign_2018summer .yellow_area .caution {
+	font-size:90%;
+}
+
+
+.campaign_2018summer .nouenmoji {
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.campaign_2018summer .nouenmoji b {
+	color:#F7822B;
+	font-size:120%;
+}
+
+.campaign_2018summer .areamoji {
+	background:#FCF870;
+	font-size:110%;
+	text-align:center;
+	padding:10px 0;
+	margin:10px 0;
+}
+
+.campaign_2018summer .nouen ul {
+	margin-bottom:20px;
+}
+
+.campaign_2018summer ul li {
+	list-style-type:none;
+}
+
+.campaign_2018summer .nouen li img {
+	width:100%;
+}
+
+.campaign_2018summer .nouen li.line {
+	border-bottom:1px solid #B3B3B3;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+
+.campaign_2018summer .nouen li p b {
+	text-decoration: underline;
+    font-size: 120%;
+    padding-left: 30px;
+    background: url(../img/campaign_2018summer/icon_link.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.campaign_2018summer .nouen li p span {
+	color:#ffffff;
+	background:#FCA927;
+	padding:3px 6px;
+	margin:0 6px 6px 0;
+     border-radius:6px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    -ms-border-radius:6px;
+    display: inline-block;
+}
+
+.campaign_2018summer .nouen .point {
+	margin:6px 0;
+}
+
+.campaign_2018summer .step li:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+	margin: 0px !important;
+}
+
+
+.campaign_2018summer .step li {
+	margin:6px 0;
+}
+
+.campaign_2018summer .step li.line {
+	border-bottom:1px dashed #1EB7DD;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+
+.campaign_2018summer .step li img {
+	width:13%;
+	float:left;
+}
+
+.campaign_2018summer .step li p {
+	width:84%;
+	float:right;
+}
+
+.campaign_2018summer .step {
+    margin-bottom:20px;
+
+}
