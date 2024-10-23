@@ -108,11 +108,11 @@ $faq_query = new WP_Query($args);
                 <div class="advisor_text_column">
                     <div class="advisor_info">
                         <span class="advisor_carrier">アドバイザー暦 10年</span>
-                        <span class="advisor_area">キッチンファーム日吉担当／関東</span>
+                        <span class="advisor_area">横浜かたくら担当/ 関東</span>
                     </div>
 
                     <div class="advisor_name">
-                        <span>松村 恭子さん</span>
+                        <span>原尻 美保さん</span>
                     </div>
 
                     <div class="advisor_img_column sp">
@@ -120,8 +120,7 @@ $faq_query = new WP_Query($args);
                     </div>
 
                     <div class="advisor_description">
-                        植物関係のお仕事の傍ら、ランドスケープデザインを勉強していた経験があり、センス抜群な松村さん。<br>
-                        農園はいつもおしゃれに彩られています。イベントの企画が得意で、開催する度に農園が人でいっぱいに！竹から土台を作って流しそうめんをしてみたり、とれたて野菜のカレーを作ったり、「食べる」ということに着目した独自のイベントが自慢です。
+                        昆虫や小動物との共生、環境に負担をかけない野菜づくりを心がけた無農薬無肥料不耕起栽培で、お野菜・和洋ハーブを育てている地元神奈川区民のハマっ子原尻さん。もともとデザイン関連の仕事をしていましたが、植物への情熱が高じ、アドバイザーへ。現在は、アドバイバー業務をしながら、自家栽培のハーブを生かし、ハーブコーディネーターとしても活動中です。
                     </div>
                 </div>
 

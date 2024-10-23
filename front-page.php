@@ -98,7 +98,7 @@ get_header();
             </clipPath>
         </defs>
     </svg>
-    
+
     <div class="swiper nextstory_slider infinite_slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -161,15 +161,16 @@ get_header();
 <section class="farmblog">
     <img class="note_top" src="<?= get_assets_directory_uri() ?>/images/note_top.png" />
     <div class="container">
-        <p class="section_ttl_en">Farm Blog</p>
+        <p class="section_ttl_en">Farm Blog & Event</p>
         <h2 class="section_ttl_ja">
-            <span>農園ブログ</span>
+            <span>農園ブログ＆イベント</span>
         </h2>
 
         <div class="farmblog_posts first-page">
             <?php if (!empty($selected_posts)): foreach ($selected_posts as $post): setup_postdata($post); ?>
-                <?php get_template_part('template-parts/components/blog-card'); ?>
-            <?php endforeach; endif; ?>
+                    <?php get_template_part('template-parts/components/blog-card'); ?>
+            <?php endforeach;
+            endif; ?>
         </div>
         <div class="section_btn_wrap">
             <a class="section_btn more" href="/blog/"><span>もっと読む</span></a>
@@ -190,15 +191,15 @@ get_header();
 
     <div class="movie_list">
         <?php
-            /** 制御クラスの読み込み */
-            require_once __DIR__ . '/../../../php_libs/App.php';
-            $args = array(
-                'playlist' => 'PL7wZ0WWnn0XyNYTxLB2S58UNel9u8PNoZ', //プレイリストID
-                'token' => 'AIzaSyAgSv7B5oRPu3swkIXhlgkilYBR-TfVn1g', //アクセストークン
-                'maxResults' => 4, //表示数 指定なし''デフォルト設定数の20個
-            );
-            $youtube = new Util_Youtube();
-            call_user_func_array(array($youtube, 'setResponse'), $args);
+        /** 制御クラスの読み込み */
+        require_once __DIR__ . '/../../../php_libs/App.php';
+        $args = array(
+            'playlist' => 'PL7wZ0WWnn0XyNYTxLB2S58UNel9u8PNoZ', //プレイリストID
+            'token' => 'AIzaSyAgSv7B5oRPu3swkIXhlgkilYBR-TfVn1g', //アクセストークン
+            'maxResults' => 4, //表示数 指定なし''デフォルト設定数の20個
+        );
+        $youtube = new Util_Youtube();
+        call_user_func_array(array($youtube, 'setResponse'), $args);
         ?>
     </div>
     <div class="movie_list_bg_bottom">
@@ -221,8 +222,9 @@ get_header();
     </h2>
     <div class="news_posts">
         <?php if ($news_query->have_posts()): while ($news_query->have_posts()): $news_query->the_post(); ?>
-            <?php get_template_part('template-parts/components/news-card'); ?>
-        <?php endwhile; endif; ?>
+                <?php get_template_part('template-parts/components/news-card'); ?>
+        <?php endwhile;
+        endif; ?>
     </div>
     <div class="section_btn_wrap">
         <a href="/news/" class="section_btn more"><span>もっと見る</span></a>
